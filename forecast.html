@@ -28,6 +28,9 @@
                     <a class="navbar-item" href="index.html">
                         Home
                     </a>
+                    <a class="navbar-item" href="validation.html">
+                        Validation
+                    </a>
                     <a class="navbar-item is-active" href="forecast.html">
                         Forecast
                     </a>
@@ -40,9 +43,9 @@
     </nav>
     <!--NAVBAR END-->
     <div class="container">
-        <!--IMPORT VALIDATION DATA START-->
+        <!--IMPORT INPUT DATA START-->
         <section class="section" style="padding-top: 100px;">
-            <p class="is-size-5">Import Validation Data</p>
+            <p class="is-size-5">Import Input Data</p>
             <section class="section">
                 <div class="file has-name">
                     <label class="file-label">
@@ -56,7 +59,7 @@
                             </span>
                         </span>
                         <span class="file-name">
-                            mandulog-river-data.csv
+                            input-data.csv
                         </span>
                     </label>
                 </div>
@@ -67,84 +70,91 @@
                         <a class="button" style="width: 250px;">Forecast</a>
                     </div>
                     <div class="level-item">
-                        <a class="button" style="width: 250px;">Save Model</a>
+                        <a class="button" style="width: 250px;">Save Result</a>
                     </div>
                 </div>
             </section>
         </section>
-        <!--IMPORT VALIDATION DATA END-->
+        <!--IMPORT INPUT DATA END-->
         <hr>
-        <!--RESULT START-->
-        <section class="section">
-            <p class="is-size-5">Result</p>
-        </section>
-        <section class="section">
-            <div class="level">
-                <div class="level-item">
-                    <a class="button" style="width: 250px;">View Forecast Visualization</a>
-                </div>
-                <div class="level-item">
-                    <a class="button" style="width: 250px;">Save Results</a>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <table class="table is-fullwidth is-bordered is-hoverable">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Time</th>
-                        <th>Actual</th>
-                        <th>Predicted</th>
-                        <th>MAPE</th>
-                        <th>RMSE</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>01-10-2017</td>
-                        <td>5:30pm</td>
-                        <td>2.5cm</td>
-                        <td>2.6cm</td>
-                        <td>0.01</td>
-                        <td>0.09</td>
-                    </tr>
-                     <tr>
-                        <td>01-10-2017</td>
-                        <td>6:00pm</td>
-                        <td>2.8cm</td>
-                        <td>2.7cm</td>
-                        <td>0.01</td>
-                        <td>0.08</td>
-                    </tr>
-                     <tr>
-                        <td>01-10-2017</td>
-                        <td>6:30pm</td>
-                        <td>2.4cm</td>
-                        <td>2.6cm</td>
-                        <td>0.02</td>
-                        <td>0.08</td>
-                    </tr>
-                     <tr>
-                        <td>01-10-2017</td>
-                        <td>7:00pm</td>
-                        <td>2.4cm</td>
-                        <td>2.4cm</td>
-                        <td>0.03</td>
-                        <td>0.05</td>
-                    </tr>
-                     <tr>
-                        <td>01-10-2017</td>
-                        <td>7:30pm</td>
-                        <td>2.5cm</td>
-                        <td>2.4cm</td>
-                        <td>0.03</td>
-                        <td>0.03</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <!--RESULT END-->
+        <!--SECTION START-->
+       <section class="section">
+           <div class="level">
+               <div class="level-item">
+                   <table class="table is-hoverable is-striped">
+                       <thead>
+                           <tr>
+                               <th>Input</th>
+                               <th style="width: 60px;">Value</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>1</td>
+                               <td>1.2</td>
+                           </tr>
+                           <tr>
+                               <td>2</td>
+                               <td>2.5</td>
+                           </tr>
+                           <tr>
+                               <td>3</td>
+                               <td>2.5</td>
+                           </tr>
+                           <tr>
+                               <td>4</td>
+                               <td>1.0</td>
+                           </tr>
+                           <tr>
+                               <td>5</td>
+                               <td>3.0</td>
+                           </tr>
+                           <tr>
+                               <td>6</td>
+                               <td>3.1</td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <div class="level-item">
+                   <table class="table is-hoverable is-striped">
+                       <thead>
+                           <tr>
+                               <th>Day</th>
+                               <th style="width: 60px;">Result</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>1</td>
+                               <td>1.2</td>
+                           </tr>
+                           <tr>
+                               <td>2</td>
+                               <td>2.5</td>
+                           </tr>
+                           <tr>
+                               <td>3</td>
+                               <td>2.5</td>
+                           </tr>
+                           <tr>
+                               <td>4</td>
+                               <td>1.0</td>
+                           </tr>
+                           <tr>
+                               <td>5</td>
+                               <td>3.0</td>
+                           </tr>
+                           <tr>
+                               <td>6</td>
+                               <td>3.1</td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+           </div>
+       </section>
+        <!--SECTION END-->
     </div>
     <!--JQUERY START-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
