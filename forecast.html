@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waterlevel Forecast</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <!--NAVBAR START-->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <h1 class="title is-4">FORECASTING</h1>
+                </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        Home
+                    </a>
+                    <a class="navbar-item is-active" href="forecast.html">
+                        Forecast
+                    </a>
+                    <a class="navbar-item" href="model.html">
+                        Models
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--NAVBAR END-->
+    <div class="container">
+        <!--IMPORT VALIDATION DATA START-->
+        <section class="section" style="padding-top: 100px;">
+            <p class="is-size-5">Import Validation Data</p>
+            <section class="section">
+                <div class="file has-name">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">
+                                Choose a file…
+                            </span>
+                        </span>
+                        <span class="file-name">
+                            mandulog-river-data.csv
+                        </span>
+                    </label>
+                </div>
+            </section>
+            <section class="section">
+                <div class="level">
+                    <div class="level-item">
+                        <a class="button" style="width: 250px;">Forecast</a>
+                    </div>
+                    <div class="level-item">
+                        <a class="button" style="width: 250px;">Save Model</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--IMPORT VALIDATION DATA END-->
+        <hr>
+        <!--RESULT START-->
+        <section class="section">
+            <p class="is-size-5">Result</p>
+        </section>
+        <section class="section">
+            <div class="level">
+                <div class="level-item">
+                    <a class="button" style="width: 250px;">View Forecast Visualization</a>
+                </div>
+                <div class="level-item">
+                    <a class="button" style="width: 250px;">Save Results</a>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <table class="table is-fullwidth is-bordered is-hoverable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Actual</th>
+                        <th>Predicted</th>
+                        <th>MAPE</th>
+                        <th>RMSE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01-10-2017</td>
+                        <td>5:30pm</td>
+                        <td>2.5cm</td>
+                        <td>2.6cm</td>
+                        <td>0.01</td>
+                        <td>0.09</td>
+                    </tr>
+                     <tr>
+                        <td>01-10-2017</td>
+                        <td>6:00pm</td>
+                        <td>2.8cm</td>
+                        <td>2.7cm</td>
+                        <td>0.01</td>
+                        <td>0.08</td>
+                    </tr>
+                     <tr>
+                        <td>01-10-2017</td>
+                        <td>6:30pm</td>
+                        <td>2.4cm</td>
+                        <td>2.6cm</td>
+                        <td>0.02</td>
+                        <td>0.08</td>
+                    </tr>
+                     <tr>
+                        <td>01-10-2017</td>
+                        <td>7:00pm</td>
+                        <td>2.4cm</td>
+                        <td>2.4cm</td>
+                        <td>0.03</td>
+                        <td>0.05</td>
+                    </tr>
+                     <tr>
+                        <td>01-10-2017</td>
+                        <td>7:30pm</td>
+                        <td>2.5cm</td>
+                        <td>2.4cm</td>
+                        <td>0.03</td>
+                        <td>0.03</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--RESULT END-->
+    </div>
+    <!--JQUERY START-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".navbar-burger").click(function() {
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+    });
+    </script>
+    <!--JQUERY END-->
+</body>
+
+</html>
