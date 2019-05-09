@@ -80,4 +80,7 @@
   .mt-0-sm {
     margin-top: 0 !important;
   }
+  .px-4-sm {
+    padding: 0 1.5rem !important;
+  }
 }
